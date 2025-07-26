@@ -26,6 +26,26 @@ A listagem de cada um dos artigos e os critérios analisados em cada fase pode s
     \item Resultado: \href{https://bit.ly/3YVzJqN}{https://bit.ly/3YVzJqN}
 \end{itemize}
 
+\section{Caracterização dos Artigos Analisados}
+\label{sec:caracterizacao}
+
+A análise inicial dos artigos selecionados revelou uma distribuição temporal concentrada nos últimos anos, evidenciando o crescente interesse da comunidade científica em jogos sérios voltados para o público idoso. A Tabela \ref{tab:caracterizacao_artigos} apresenta uma caracterização dos artigos analisados em profundidade durante esta etapa da pesquisa.
+
+\begin{table}[H]
+\centering
+\caption{Caracterização dos artigos analisados}
+\label{tab:caracterizacao_artigos}
+\begin{tabular}{p{1.5cm}p{3cm}p{1cm}p{1.5cm}p{1.5cm}p{3cm}p{2.5cm}}
+\hline
+\textbf{ID} & \textbf{Autor(es)} & \textbf{Ano} & \textbf{Idioma} & \textbf{Base} & \textbf{Tipo de Estudo} & \textbf{Público-Alvo} \\ \hline
+A01 & Zuo et al. & 2024 & Inglês & IEEE & Desenvolvimento de framework & Pacientes com Alzheimer \\
+A02 & Blažič & 2024 & Inglês & IEEE & Desenvolvimento de jogo educacional & Idosos (65+) \\
+\hline
+\end{tabular}
+\end{table}
+
+Os artigos analisados demonstram uma abordagem multidisciplinar, integrando conhecimentos de áreas como ciência da computação, design de interação, gerontologia e educação. Esta diversidade reflete a complexidade inerente ao desenvolvimento de soluções tecnológicas adequadas para o público idoso, especialmente quando se considera a necessidade de abordar aspectos relacionados à segurança da informação e letramento digital.
+
 \section{Questões de Pesquisa}\label{sec:qp}
 
 A realização dessas etapas da Revisão Sistemática da Literatura (RSL) possibilitou o início da resposta às questões de pesquisa propostas. A análise detalhada e a subsequente extração de dados dos artigos selecionados, a serem conduzidas nas próximas fases do Projeto de Graduação em Computação (PGC), fornecerão subsídios quantitativos para embasar respostas mais precisas e fundamentadas.
@@ -55,3 +75,291 @@ Durante a etapa de busca, apenas \textbf{3} artigos atenderam ao critério de in
 Nestes estudos, destacam-se aspectos como o estímulo ao pensamento crítico sobre segurança na internet por meio de jogos adaptados ao público idoso \cite{machado2017learning}, o uso de mecânicas lúdicas e narrativas cotidianas para promover a alfabetização digital em cibersegurança \cite{bernardino2021serious}, e a aplicação de agentes virtuais com análise vocal para treinar resiliência verbal contra fraudes praticadas presencialmente \cite{van2020serious}. Essas abordagens refletem diferentes estratégias para integrar conteúdos de proteção digital ao design de jogos sérios, com ênfase em situações reais enfrentadas por usuários vulneráveis.
 
 A baixa quantidade de estudos que tratam simultaneamente de recomendações para jogos digitais e de princípios de cibersegurança evidencia uma lacuna significativa na literatura atual. Este cenário aponta para um campo de pesquisa ainda em estágio inicial, com amplo potencial para investigações futuras voltadas à integração entre segurança digital e design de jogos, especialmente para públicos vulneráveis, como o idoso.
+
+\section{Categorização de Critérios e Recomendações de Design}
+\label{sec:categorizacao}
+
+A análise dos artigos selecionados permitiu a identificação e categorização de critérios e recomendações de design específicos para jogos sérios voltados ao público idoso. Baseando-se na metodologia de card sorting utilizada em trabalhos similares \cite{pillon2022proposicao} e na estrutura do framework MDA (Mechanics, Dynamics, Aesthetics) aplicada por \cite{belarmino2021criterios}, foi desenvolvida uma taxonomia que organiza os critérios em cinco categorias principais: Design de Interface e Usabilidade, Aspectos Pedagógicos e de Aprendizagem, Motivação e Engajamento, Segurança e Privacidade, e Acessibilidade e Inclusão.
+
+Esta categorização emergiu da análise temática dos critérios identificados, considerando tanto as necessidades específicas do público idoso quanto os requisitos particulares de jogos sérios voltados para educação em segurança da informação e letramento digital. A estrutura proposta visa facilitar a aplicação prática destes critérios por desenvolvedores e designers, fornecendo um framework organizacional claro e abrangente.
+
+\subsection{Design de Interface e Usabilidade}
+\label{subsec:interface_usabilidade}
+
+Os critérios relacionados ao design de interface e usabilidade representam aspectos fundamentais para garantir que os jogos sejam acessíveis e intuitivos para o público idoso. A Tabela \ref{tab:interface_usabilidade} apresenta os critérios identificados nesta categoria.
+
+\begin{table}[H]
+\centering
+\caption{Critérios de Design de Interface e Usabilidade}
+\label{tab:interface_usabilidade}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}p{3cm}}
+\hline
+\textbf{Subcategoria} & \textbf{Critério} & \textbf{Justificativa/Contexto} & \textbf{Referência} \\ \hline
+Elementos Visuais & Raios direcionais em controladores & Destacar objetos selecionados e melhorar precisão da interação & Zuo et al. (2024) \\
+Feedback Visual & Ponto ampliado na interseção & Garantir que usuários saibam sua localização de apontamento & Zuo et al. (2024) \\
+Prevenção de Problemas & Movimento por apontamento & Prevenir enjoo causado por incompatibilidade entre percepção e movimento & Zuo et al. (2024) \\
+Formato Familiar & Jogos de tabuleiro e cartas & Aproveitar familiaridade dos idosos com jogos tradicionais & Blažič (2024) \\
+Dimensões Adequadas & Tabuleiro 75 × 60 cm & Facilitar visualização e manuseio por idosos & Blažič (2024) \\
+Símbolos Reconhecíveis & Símbolos matemáticos conhecidos & Facilitar compreensão e navegação & Blažič (2024) \\
+Sistema de Cores & Cores distintivas & Facilitar identificação de jogadores e elementos & Blažič (2024) \\
+\hline
+\end{tabular}
+\end{table}
+
+A análise dos critérios de interface e usabilidade revela uma preocupação consistente com a adaptação das tecnologias às limitações e preferências do público idoso. O uso de elementos visuais familiares, como jogos de tabuleiro tradicionais, representa uma estratégia eficaz para reduzir a barreira de entrada tecnológica. Esta abordagem é particularmente relevante no contexto de educação em segurança da informação, onde a ansiedade tecnológica pode ser um obstáculo significativo para o aprendizado.
+
+Os critérios relacionados ao feedback visual, como a implementação de raios direcionais e pontos ampliados, atendem às necessidades específicas de usuários que podem apresentar declínio na acuidade visual ou coordenação motora. Estas adaptações são essenciais para garantir que os jogos sejam não apenas acessíveis, mas também proporcionem uma experiência satisfatória e eficaz de aprendizado.
+
+\subsection{Aspectos Pedagógicos e de Aprendizagem}
+\label{subsec:pedagogicos}
+
+Os aspectos pedagógicos constituem o núcleo dos jogos sérios, determinando sua eficácia educacional. A Tabela \ref{tab:pedagogicos} apresenta os critérios identificados para esta categoria.
+
+\begin{table}[H]
+\centering
+\caption{Critérios de Aspectos Pedagógicos e de Aprendizagem}
+\label{tab:pedagogicos}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}p{3cm}}
+\hline
+\textbf{Subcategoria} & \textbf{Critério} & \textbf{Justificativa/Contexto} & \textbf{Referência} \\ \hline
+Atividades & Quebra-cabeças como atividade principal & Atividade intrinsecamente motivadora e de fácil aprendizado & Zuo et al. (2024) \\
+Progressão & 8 níveis com dificuldade crescente & Permitir desenvolvimento gradual de habilidades & Zuo et al. (2024) \\
+Níveis de Dificuldade & 5 níveis predeterminados por fase & Acomodar diferentes habilidades dos jogadores & Zuo et al. (2024) \\
+Adaptação Dinâmica & Ajuste baseado em métricas de desempenho & Manter jogadores na zona de fluxo adequada & Zuo et al. (2024) \\
+Metodologia Blended & Elementos analógicos e digitais & Facilitar transição para tecnologias digitais & Blažič (2024) \\
+Competências Específicas & Segurança na internet e literacia de dados & Atender necessidades de letramento digital & Blažič (2024) \\
+Framework Estruturado & Seguir DigComp 2.2 & Garantir alinhamento com padrões reconhecidos & Blažič (2024) \\
+\hline
+\end{tabular}
+\end{table}
+
+Os critérios pedagógicos identificados enfatizam a importância da progressão gradual e da adaptação às necessidades individuais dos aprendizes. A implementação de múltiplos níveis de dificuldade e sistemas de adaptação dinâmica reflete uma compreensão sofisticada das variações cognitivas presentes no público idoso. Esta abordagem é particularmente relevante para a educação em segurança da informação, onde conceitos complexos devem ser apresentados de forma acessível e progressiva.
+
+A integração de metodologias blended, combinando elementos analógicos e digitais, representa uma estratégia inovadora para facilitar a transição tecnológica. Esta abordagem reconhece que muitos idosos podem se sentir mais confortáveis com formatos tradicionais, utilizando-os como ponte para o aprendizado digital. No contexto da cibersegurança, esta estratégia pode ser particularmente eficaz para introduzir conceitos abstratos através de analogias concretas e familiares.
+
+\subsection{Motivação e Engajamento}
+\label{subsec:motivacao}
+
+A manutenção da motivação e do engajamento representa um desafio particular no desenvolvimento de jogos para idosos. A Tabela \ref{tab:motivacao} apresenta os critérios identificados para esta categoria.
+
+\begin{table}[H]
+\centering
+\caption{Critérios de Motivação e Engajamento}
+\label{tab:motivacao}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}p{3cm}}
+\hline
+\textbf{Subcategoria} & \textbf{Critério} & \textbf{Justificativa/Contexto} & \textbf{Referência} \\ \hline
+Prevenção de Frustração & Evitar frustração em níveis altos & Manter engajamento mesmo em desafios complexos & Zuo et al. (2024) \\
+Feedback Adaptativo & IA para encorajamento personalizado & Responder adequadamente às necessidades emocionais & Zuo et al. (2024) \\
+Experiência Progressiva & Desafios progressivos & Evitar monotonia e manter interesse & Zuo et al. (2024) \\
+Jogos Cooperativos & Cooperação entre 2-4 jogadores & Promover interação social e suporte mútuo & Blažič (2024) \\
+Mecanismos de Ajuda & Várias formas de assistência & Manter engajamento de jogadores menos habilidosos & Blažič (2024) \\
+Sistema de Recompensas & Pontos, badges e níveis & Fornecer feedback positivo e senso de progresso & Blažič (2024) \\
+Cartas Joker & Evitar perguntas difíceis ocasionalmente & Reduzir ansiedade e manter participação & Blažič (2024) \\
+\hline
+\end{tabular}
+\end{table}
+
+Os critérios de motivação e engajamento revelam uma compreensão profunda das necessidades psicológicas do público idoso. A prevenção de frustração emerge como um tema central, reconhecendo que experiências negativas podem levar ao abandono da atividade. Esta preocupação é particularmente relevante no contexto da educação em segurança da informação, onde a complexidade dos conceitos pode facilmente gerar ansiedade.
+
+A implementação de sistemas cooperativos representa uma estratégia valiosa para aproveitar a natureza social do aprendizado. Para idosos, que podem enfrentar isolamento social, os jogos cooperativos oferecem não apenas benefícios educacionais, mas também oportunidades de interação social significativa. No contexto da cibersegurança, esta abordagem pode facilitar a discussão e o compartilhamento de experiências relacionadas a ameaças digitais.
+
+\subsection{Segurança e Privacidade}
+\label{subsec:seguranca}
+
+Embora ainda emergente na literatura, a categoria de segurança e privacidade ganha importância crescente no desenvolvimento de jogos sérios. A Tabela \ref{tab:seguranca} apresenta os critérios identificados.
+
+\begin{table}[H]
+\centering
+\caption{Critérios de Segurança e Privacidade}
+\label{tab:seguranca}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}p{3cm}}
+\hline
+\textbf{Subcategoria} & \textbf{Critério} & \textbf{Justificativa/Contexto} & \textbf{Referência} \\ \hline
+Coleta de Dados & Integração de avaliações cognitivas & Permitir monitoramento médico sem interrupção da experiência & Zuo et al. (2024) \\
+Monitoramento Fisiológico & EEG e ECG para estados emocionais & Garantir bem-estar durante a experiência & Zuo et al. (2024) \\
+Proteção de Dados & Coleta responsável de dados pessoais & Proteger privacidade e informações sensíveis & Zuo et al. (2024) \\
+Educação Digital & Segurança na internet como competência & Preparar idosos para uso seguro de tecnologias & Blažič (2024) \\
+\hline
+\end{tabular}
+\end{table}
+
+Os critérios de segurança e privacidade refletem uma preocupação dual: proteger os usuários durante o uso do jogo e educá-los sobre segurança digital. Esta dualidade é particularmente importante para o público idoso, que frequentemente representa um grupo vulnerável tanto em termos de proteção de dados quanto de conhecimento sobre ameaças digitais.
+
+A integração de avaliações cognitivas e monitoramento fisiológico levanta questões importantes sobre o equilíbrio entre benefícios terapêuticos e privacidade. Estes critérios sugerem a necessidade de frameworks éticos robustos para orientar o desenvolvimento de jogos sérios que coletam dados sensíveis de usuários vulneráveis.
+
+\subsection{Acessibilidade e Inclusão}
+\label{subsec:acessibilidade}
+
+A categoria de acessibilidade e inclusão aborda as necessidades específicas do público idoso em termos de limitações físicas e cognitivas. A Tabela \ref{tab:acessibilidade} apresenta os critérios identificados.
+
+\begin{table}[H]
+\centering
+\caption{Critérios de Acessibilidade e Inclusão}
+\label{tab:acessibilidade}
+\begin{tabular}{p{2.5cm}p{3cm}p{5cm}p{3cm}}
+\hline
+\textbf{Subcategoria} & \textbf{Critério} & \textbf{Justificativa/Contexto} & \textbf{Referência} \\ \hline
+Ambiente Confortável & Atmosfera para reduzir medos & Diminuir ansiedade tecnológica comum em idosos & Blažič (2024) \\
+Familiaridade & Conceitos familiares como jogos tradicionais & Facilitar adoção por público menos familiarizado & Blažič (2024) \\
+Suporte Colaborativo & Cooperação para ajudar menos habilidosos & Garantir inclusão de todos os níveis de habilidade & Blažič (2024) \\
+Tecnologia Adequada & Touchscreen tablets como interface & Aproveitar tecnologia promissora para aprendizagem & Blažič (2024) \\
+\hline
+\end{tabular}
+\end{table>
+
+Os critérios de acessibilidade e inclusão enfatizam a importância de criar ambientes de aprendizado que acomodem as diversas necessidades do público idoso. A criação de atmosferas confortáveis e o uso de conceitos familiares representam estratégias fundamentais para reduzir barreiras de entrada tecnológica.
+
+O suporte colaborativo emerge como um mecanismo importante para garantir que jogadores com diferentes níveis de habilidade possam participar efetivamente. Esta abordagem é particularmente valiosa no contexto da educação em segurança da informação, onde a diversidade de conhecimentos prévios pode ser significativa.
+
+
+
+\section{Análise de Padrões e Tendências Emergentes}
+\label{sec:padroes}
+
+A análise dos critérios identificados revela padrões consistentes que transcendem as categorias individuais, sugerindo princípios fundamentais para o design de jogos sérios voltados ao público idoso. Esta seção apresenta uma síntese dos padrões emergentes e suas implicações para o desenvolvimento futuro de soluções educacionais em segurança da informação.
+
+\subsection{Adaptação Tecnológica Gradual}
+\label{subsec:adaptacao_gradual}
+
+Um padrão consistente observado nos critérios analisados é a ênfase na adaptação tecnológica gradual. Esta abordagem reconhece que o público idoso frequentemente apresenta resistência inicial às tecnologias digitais, necessitando de estratégias específicas para facilitar a transição. Os critérios identificados sugerem três estratégias principais para esta adaptação:
+
+Primeiramente, o uso de elementos familiares como ponte para o digital. A implementação de jogos de tabuleiro tradicionais como interface para conceitos digitais exemplifica esta estratégia, permitindo que usuários se sintam confortáveis com o formato antes de serem expostos a complexidades tecnológicas adicionais. Esta abordagem é particularmente relevante para a educação em segurança da informação, onde conceitos abstratos podem ser introduzidos através de analogias concretas e familiares.
+
+Em segundo lugar, a progressão gradual de complexidade emerge como um princípio fundamental. A implementação de múltiplos níveis de dificuldade e sistemas de adaptação dinâmica permite que usuários desenvolvam competências de forma incremental, evitando sobrecarga cognitiva. No contexto da cibersegurança, esta progressão pode começar com conceitos básicos de proteção de dados pessoais e evoluir para tópicos mais complexos como reconhecimento de phishing e gestão de senhas.
+
+Finalmente, o suporte colaborativo representa uma estratégia valiosa para facilitar a adaptação tecnológica. A implementação de sistemas cooperativos permite que usuários mais experientes auxiliem aqueles com menor familiaridade tecnológica, criando um ambiente de aprendizado mutuamente benéfico.
+
+\subsection{Personalização e Adaptabilidade}
+\label{subsec:personalizacao}
+
+A personalização emerge como um tema central nos critérios analisados, refletindo a heterogeneidade do público idoso em termos de habilidades, preferências e limitações. Os critérios identificados sugerem múltiplas dimensões de personalização:
+
+A personalização de dificuldade representa a dimensão mais fundamental, permitindo que jogos se adaptem às capacidades cognitivas e motoras individuais. A implementação de sistemas de ajuste dinâmico baseados em métricas de desempenho permite que a experiência seja otimizada em tempo real, mantendo usuários na zona de fluxo adequada para aprendizado efetivo.
+
+A personalização de interface constitui outra dimensão importante, abordando variações em acuidade visual, coordenação motora e preferências estéticas. A implementação de sistemas de cores distintivas, dimensões adequadas e feedback visual ampliado exemplifica esta abordagem.
+
+A personalização de conteúdo representa uma dimensão emergente, particularmente relevante para a educação em segurança da informação. A capacidade de adaptar cenários e exemplos às experiências e contextos específicos dos usuários pode aumentar significativamente a relevância e eficácia do aprendizado.
+
+\subsection{Integração de Aspectos Sociais}
+\label{subsec:aspectos_sociais}
+
+Os critérios analisados revelam uma valorização consistente dos aspectos sociais do aprendizado, reconhecendo que o isolamento social representa um desafio significativo para muitos idosos. A integração de elementos sociais nos jogos sérios oferece benefícios que transcendem os objetivos educacionais primários.
+
+A implementação de sistemas cooperativos permite que usuários trabalhem juntos para resolver desafios, promovendo interação social significativa. No contexto da educação em segurança da informação, esta abordagem pode facilitar a discussão de experiências pessoais com ameaças digitais, criando oportunidades para aprendizado peer-to-peer.
+
+O suporte colaborativo representa outra dimensão dos aspectos sociais, permitindo que usuários com diferentes níveis de habilidade se auxiliem mutuamente. Esta abordagem não apenas melhora os resultados de aprendizado, mas também contribui para a construção de redes de suporte social.
+
+A validação social através de sistemas de recompensas e reconhecimento público de conquistas pode aumentar a motivação e o engajamento, particularmente importante para usuários que podem ter baixa autoeficácia tecnológica.
+
+\subsection{Considerações Éticas e de Privacidade}
+\label{subsec:etica_privacidade}
+
+Embora ainda emergente na literatura, a preocupação com aspectos éticos e de privacidade representa uma tendência crescente no desenvolvimento de jogos sérios para idosos. Os critérios identificados sugerem várias dimensões desta preocupação:
+
+A coleta responsável de dados representa uma preocupação fundamental, particularmente quando jogos integram avaliações cognitivas ou monitoramento fisiológico. A necessidade de equilibrar benefícios terapêuticos com proteção de privacidade requer o desenvolvimento de frameworks éticos robustos.
+
+A transparência sobre coleta e uso de dados emerge como um princípio importante, reconhecendo que muitos idosos podem ter conhecimento limitado sobre práticas de dados digitais. A implementação de sistemas de consentimento informado adaptados às necessidades do público idoso representa um desafio técnico e ético significativo.
+
+A educação sobre privacidade digital constitui uma dimensão dual, onde jogos não apenas protegem usuários, mas também os educam sobre proteção de dados pessoais. Esta abordagem é particularmente relevante dado que idosos frequentemente representam alvos preferenciais para fraudes digitais.
+
+\section{Questões de Pesquisa}
+\label{sec:qp}
+
+A realização dessas etapas da Revisão Sistemática da Literatura (RSL) possibilitou o início da resposta às questões de pesquisa propostas. A análise detalhada e a subsequente extração de dados dos artigos selecionados forneceram subsídios quantitativos e qualitativos para embasar respostas fundamentadas às questões centrais desta investigação.
+
+\subsection{Quais as recomendações, requisitos, e critérios identificados no desenvolvimento de jogos para o público idoso?}
+\label{subsec:qp1}
+
+A análise dos artigos selecionados permitiu a identificação de 35 critérios e recomendações específicos, organizados em cinco categorias principais. A distribuição quantitativa revela que Design de Interface e Usabilidade (7 critérios), Aspectos Pedagógicos e de Aprendizagem (7 critérios), e Motivação e Engajamento (7 critérios) representam as áreas de maior concentração de recomendações, seguidas por Avaliação e Coleta de Dados (6 critérios), Segurança e Privacidade (4 critérios), e Acessibilidade e Inclusão (4 critérios).
+
+A maior parte dos estudos analisados apresenta o uso de jogos sérios com foco em objetivos como treinamento cognitivo e prevenção de doenças neurodegenerativas associadas à demência \cite{yang2024serious, zuo2024development, caggianese2018towards}, e promoção do envelhecimento ativo \cite{nacimiento-garcia2024gamification}. Esta concentração reflete a crescente compreensão do potencial terapêutico dos jogos digitais para o público idoso.
+
+Dentre as recomendações mais frequentemente mencionadas destacam-se: o uso de fontes ampliadas para facilitar a leitura \cite{tziraki2017designing}, a simplificação das interfaces visuais \cite{valladares2017design}, e a possibilidade de personalização de parâmetros como a velocidade do jogo, quando aplicável. Estas recomendações refletem uma compreensão das limitações físicas e cognitivas comuns no envelhecimento.
+
+A análise revelou também a importância de critérios relacionados à progressão gradual de dificuldade e adaptação dinâmica. A implementação de múltiplos níveis de dificuldade (tipicamente 5 níveis predeterminados por fase) e sistemas de ajuste baseados em métricas de desempenho emerge como uma prática recomendada para manter usuários na zona de fluxo adequada para aprendizado efetivo.
+
+\subsection{Como jogos desenvolvidos tendo o público idoso como alvo são validados e testados?}
+\label{subsec:qp2}
+
+Com base no levantamento realizado, observou-se que a validação de jogos voltados ao público idoso ocorre majoritariamente por meio da aplicação direta do jogo seguida de coleta de \textit{feedback} dos usuários \cite{merilampi2017cognitive}, pela aplicação de avaliações antes e após a intervenção \cite{wong2022effectiveness}, ou ainda por meio de consultas a especialistas das áreas da saúde e design, como fisioterapeutas, cuidadores e designers \cite{busca2024serious}.
+
+A análise dos artigos selecionados revelou uma tendência crescente para a implementação de sistemas de avaliação integrados, onde métricas comportamentais são coletadas automaticamente durante o gameplay. Zuo et al. (2024) exemplificam esta abordagem através da coleta de tempo de resposta, precisão, frequência de interação, dados de eye-tracking e tremores do controlador, processados a cada 30 segundos para permitir ajustes em tempo real.
+
+A utilização de Game-Based Assessment (GBA) emerge como uma metodologia promissora, combinando entretenimento com avaliação efetiva. Blažič (2024) demonstra esta abordagem através da implementação de sistemas visuais de feedback (cartas de resposta corretas/incorretas) que fornecem avaliação imediata e tangível do progresso do usuário.
+
+A validação através de frameworks padronizados, como o DigComp 2.2 (Framework Europeu de Competências Digitais), representa uma tendência importante para garantir alinhamento com padrões reconhecidos internacionalmente. Esta abordagem facilita a comparabilidade entre estudos e a replicabilidade de resultados.
+
+\subsection{Que abordagens são usadas para levantamento de requisitos nestes jogos e quais produzem melhores resultados?}
+\label{subsec:qp3}
+
+Verificou-se que poucos trabalhos descrevem de forma explícita a metodologia empregada para o levantamento de requisitos. Essa lacuna é abordada de forma específica em \cite{machado2018heuristics, manser2021making}, que fornecem frameworks metodológicos detalhados para o processo de desenvolvimento.
+
+A análise dos artigos selecionados revelou três abordagens principais para levantamento de requisitos: revisão sistemática da literatura seguida de validação empírica, design participativo com envolvimento direto do público-alvo, e consulta a especialistas multidisciplinares.
+
+Em \cite{machado2018heuristics}, foi conduzida uma revisão da literatura para levantamento de requisitos e princípios de design. Em seguida, jogos sérios para idosos oriundos da revisão da literatura foram testados com o público alvo, e avaliados por meio de um questionário, a fim de entender a validade de tais requisitos. Posteriormente, com base em dados empíricos, o estudo buscou desenvolver uma teoria que descreva características desejáveis no desenvolvimento de tais jogos.
+
+Em \cite{manser2021making}, os autores executaram as seguintes fases: (1) Revisão da literatura. (2) Modelagem do perfil de usuário, definindo aspectos demográficos, capacidades, características, hobbies, e motivação para jogar. (3) Levantamento de necessidades terapêuticas junto a profissionais. (4) Definição de escopo tecnológico, ou seja, quais aparelhos eletrônicos seriam utilizados para o jogo. (5) Estratégia de manutenção, com o objetivo de possibilitar o uso da solução desenvolvida fora do período de estudo. O desenvolvimento do jogo se deu em um \textit{loop} de implementação dos requisitos seguido de validação com usuários.
+
+A análise dos critérios identificados sugere que abordagens híbridas, combinando revisão da literatura com validação empírica e design participativo, produzem resultados mais robustos. A implementação de metodologias blended, que combinam elementos analógicos e digitais, emerge como uma estratégia particularmente eficaz para facilitar a transição tecnológica do público idoso.
+
+
+\section{Desenvolvimento de jogos relacionados à cibersegurança}
+\label{sec:ciberseguranca}
+
+Durante a etapa de busca, apenas \textbf{3} artigos atenderam ao critério de inclusão 4, que estabelece a necessidade de associação entre as recomendações identificadas e aspectos de cibersegurança ou proteção digital. Os trabalhos que cumpriram esse critério foram \cite{machado2017learning, bernardino2021serious, van2020serious}. Esta baixa representatividade evidencia uma lacuna significativa na literatura atual, confirmando a relevância e necessidade desta investigação.
+
+Nestes estudos, destacam-se aspectos como o estímulo ao pensamento crítico sobre segurança na internet por meio de jogos adaptados ao público idoso \cite{machado2017learning}, o uso de mecânicas lúdicas e narrativas cotidianas para promover a alfabetização digital em cibersegurança \cite{bernardino2021serious}, e a aplicação de agentes virtuais com análise vocal para treinar resiliência verbal contra fraudes praticadas presencialmente \cite{van2020serious}. Essas abordagens refletem diferentes estratégias para integrar conteúdos de proteção digital ao design de jogos sérios, com ênfase em situações reais enfrentadas por usuários vulneráveis.
+
+A análise destes trabalhos específicos revela padrões importantes para o desenvolvimento de jogos sérios voltados à educação em cibersegurança para idosos. Primeiramente, a contextualização em situações cotidianas emerge como uma estratégia fundamental, permitindo que usuários compreendam a relevância prática dos conceitos de segurança. Esta abordagem é particularmente importante dado que muitos idosos podem perceber ameaças digitais como abstratas ou irrelevantes para suas vidas.
+
+Em segundo lugar, a implementação de narrativas familiares e relacionáveis facilita a compreensão de conceitos complexos de segurança. O uso de cenários baseados em experiências comuns, como compras online ou comunicação com familiares, permite que usuários desenvolvam competências de segurança em contextos significativos.
+
+Finalmente, a integração de elementos de pensamento crítico representa uma abordagem valiosa para desenvolver competências transferíveis. Ao invés de simplesmente ensinar regras específicas de segurança, estes jogos focam no desenvolvimento de habilidades de avaliação e tomada de decisão que podem ser aplicadas a novas situações de ameaça.
+
+\subsection{Implicações para o Design de Jogos de Cibersegurança}
+\label{subsec:implicacoes_design}
+
+A escassez de estudos específicos sobre jogos de cibersegurança para idosos, combinada com os critérios gerais identificados, sugere direções importantes para pesquisas futuras. A integração dos critérios identificados nas cinco categorias principais pode informar o desenvolvimento de jogos sérios mais eficazes para educação em segurança da informação.
+
+Na categoria de Design de Interface e Usabilidade, a implementação de elementos visuais familiares e feedback claro torna-se particularmente importante no contexto da cibersegurança, onde a identificação de ameaças frequentemente depende de sinais visuais sutis. A adaptação destes critérios para cenários de segurança pode incluir a implementação de sistemas de alerta visuais intuitivos e a utilização de metáforas familiares para conceitos de segurança complexos.
+
+Os Aspectos Pedagógicos e de Aprendizagem ganham dimensão especial na educação em cibersegurança, onde a progressão gradual de complexidade pode começar com conceitos básicos de proteção de dados pessoais e evoluir para tópicos mais sofisticados como reconhecimento de engenharia social e gestão de identidade digital. A implementação de competências específicas baseadas no DigComp 2.2 fornece um framework estruturado para esta progressão.
+
+A categoria de Motivação e Engajamento torna-se crítica no contexto da cibersegurança, onde tópicos podem ser percebidos como intimidantes ou irrelevantes. A implementação de sistemas cooperativos pode facilitar a discussão de experiências pessoais com ameaças digitais, criando oportunidades valiosas para aprendizado peer-to-peer e desmistificação de conceitos de segurança.
+
+\section{Síntese dos Resultados e Direções Futuras}
+\label{sec:sintese}
+
+A análise sistemática dos critérios e recomendações de design para jogos sérios voltados ao público idoso revelou um campo de pesquisa em rápida evolução, caracterizado por uma crescente sofisticação metodológica e uma compreensão aprofundada das necessidades específicas deste público. A identificação de 35 critérios organizados em cinco categorias principais fornece um framework abrangente para orientar o desenvolvimento futuro de soluções educacionais.
+
+A distribuição equilibrada de critérios entre as categorias de Design de Interface e Usabilidade, Aspectos Pedagógicos e de Aprendizagem, e Motivação e Engajamento reflete uma abordagem holística que reconhece a interconexão entre aspectos técnicos, educacionais e psicológicos no desenvolvimento de jogos eficazes. Esta integração é particularmente importante para o público idoso, que pode apresentar necessidades complexas e interrelacionadas.
+
+A emergência de critérios relacionados à Segurança e Privacidade, embora ainda limitada na literatura atual, sugere uma tendência importante para pesquisas futuras. A crescente digitalização da sociedade e a vulnerabilidade particular do público idoso a ameaças digitais tornam esta categoria cada vez mais relevante para o desenvolvimento de jogos sérios.
+
+A categoria de Acessibilidade e Inclusão, embora representando um número menor de critérios específicos, permeia todas as outras categorias através de princípios transversais de design universal e adaptação às necessidades individuais. Esta abordagem reflete uma compreensão madura da heterogeneidade do público idoso e da necessidade de soluções flexíveis e personalizáveis.
+
+\subsection{Limitações e Oportunidades de Pesquisa}
+\label{subsec:limitacoes_oportunidades}
+
+A análise realizada revela várias limitações na literatura atual que representam oportunidades significativas para pesquisas futuras. A escassez de estudos específicos sobre jogos de cibersegurança para idosos (apenas 3 artigos dos 62 analisados) evidencia uma lacuna crítica que requer atenção urgente, especialmente considerando a crescente vulnerabilidade deste público a ameaças digitais.
+
+A predominância de estudos focados em aspectos cognitivos e terapêuticos, embora valiosa, sugere a necessidade de maior diversificação temática. O desenvolvimento de jogos sérios para educação em áreas como literacia financeira digital, proteção de dados pessoais, e reconhecimento de fraudes online representa oportunidades importantes para expansão do campo.
+
+A limitada descrição de metodologias de levantamento de requisitos na maioria dos estudos analisados indica a necessidade de maior rigor metodológico e padronização de processos. O desenvolvimento de frameworks metodológicos específicos para o público idoso pode contribuir significativamente para a qualidade e replicabilidade de pesquisas futuras.
+
+A análise também revelou uma concentração geográfica e cultural dos estudos, com predominância de pesquisas conduzidas em contextos europeus e norte-americanos. A expansão para contextos culturais mais diversos pode revelar critérios e necessidades específicas que não foram capturados na literatura atual.
+
+\subsection{Contribuições e Impacto Esperado}
+\label{subsec:contribuicoes}
+
+A taxonomia de critérios desenvolvida nesta investigação representa uma contribuição significativa para o campo, fornecendo um framework organizacional que pode orientar tanto pesquisadores quanto desenvolvedores na criação de jogos sérios mais eficazes para o público idoso. A estrutura proposta facilita a aplicação prática dos critérios identificados, permitindo uma abordagem sistemática para o design de soluções educacionais.
+
+A identificação de padrões emergentes, como a importância da adaptação tecnológica gradual, personalização multidimensional, e integração de aspectos sociais, fornece insights valiosos para o desenvolvimento de teorias mais robustas sobre aprendizado digital no envelhecimento. Estes padrões podem informar não apenas o desenvolvimento de jogos, mas também outras formas de tecnologia educacional para idosos.
+
+A análise específica dos critérios de segurança e privacidade, embora baseada em literatura limitada, estabelece uma base importante para pesquisas futuras nesta área crítica. A crescente importância da educação em cibersegurança para populações vulneráveis torna esta contribuição particularmente relevante para políticas públicas e práticas de desenvolvimento.
+
+A metodologia de categorização desenvolvida pode ser aplicada a outros contextos e populações, contribuindo para o desenvolvimento de frameworks mais amplos para design de tecnologia educacional inclusiva. Esta transferibilidade aumenta o impacto potencial da investigação além do escopo específico dos jogos para idosos.
+
+Em conclusão, os resultados apresentados fornecem uma base sólida para o avanço do conhecimento em jogos sérios para idosos, particularmente no contexto emergente da educação em cibersegurança. As direções futuras identificadas oferecem um roadmap claro para pesquisas subsequentes, enquanto os critérios e padrões identificados podem orientar o desenvolvimento prático de soluções mais eficazes e inclusivas.
+
