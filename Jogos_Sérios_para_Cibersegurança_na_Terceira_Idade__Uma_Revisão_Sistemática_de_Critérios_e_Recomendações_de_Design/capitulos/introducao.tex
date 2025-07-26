@@ -1,0 +1,55 @@
+% ----------------------------------------------------------
+% Introdução 
+% Capítulo sem numeração, mas presente no Sumário
+% ----------------------------------------------------------
+
+\chapter[Introdução]{Introdução}
+\label{cap:introducao}
+% \addcontentsline{toc}{chapter}{Introdução}
+
+
+
+ 
+
+% Demonstração de citação: o software de análise foi desenvolvido em Python~\cite{van1995python}, utilizando as bibliotecas Pandas~\cite{mckinney2010data} e Scikit-learn~\cite{scikit-learn}.
+
+O envelhecimento da população é um fenômeno global que traz consigo novas demandas sociais e tecnológicas. Com a crescente digitalização de serviços e interações, a população idosa tem se tornado cada vez mais conectada, mas também mais vulnerável a ameaças cibernéticas~\cite{morrison2021how}. Nesse contexto, os jogos sérios (serious games) emergem como uma ferramenta promissora para educação e treinamento, oferecendo um ambiente interativo e motivador para o desenvolvimento de habilidades ~\cite{connolly2012systematic}. Especificamente na área de cibersegurança, os jogos sérios podem desempenhar um papel crucial na capacitação de idosos para navegar no mundo digital com mais segurança.
+
+Embora os benefícios dos jogos sérios para a população idosa sejam reconhecidos, abrangendo melhorias cognitivas, físicas e sociais ~\cite{konstantinidis2010integration, mccallum2012gamification}, existe uma lacuna significativa no que diz respeito a jogos focados em cibersegurança e projetados especificamente para este público. Muitos jogos existentes não consideram adequadamente as necessidades, preferências e limitações dos usuários idosos, comprometendo sua eficácia e engajamento ~\cite{mol2021desirable}. A aplicação de princípios de Desenho Universal e a atenção à acessibilidade são fundamentais, mas ainda pouco exploradas nesse domínio específico ~\cite{belarmino2021criterios}.
+
+O desenvolvimento de jogos sérios eficazes para idosos apresenta desafios únicos, especialmente na fase de levantamento de requisitos ~\cite{beristain2021standardizing}. Garantir que o jogo seja não apenas funcional, mas também acessível, intuitivo e motivador para o público-alvo exige uma compreensão profunda de suas características e expectativas. Metodologias de design centradas no usuário (\textit{User-Centered Design} - UCD) são essenciais ~\cite{brox2017user}, porém, a adaptação de técnicas de elicitação de requisitos para considerar as particularidades cognitivas, físicas e a familiaridade com tecnologia dos idosos ainda é um campo que necessita de maior investigação ~\cite{fua2013designing}.
+
+Diante desse cenário, identifica-se a ausência de um conjunto consolidado de diretrizes e critérios, fundamentado em evidências, que possa guiar o desenvolvimento de jogos sérios sobre cibersegurança para a população idosa. Questões fundamentais permanecem em aberto: Quais são as diretrizes de design essenciais para esses jogos? Como eles devem ser validados junto ao público-alvo? E quais abordagens de levantamento de requisitos se mostram mais eficazes para capturar as necessidades desse grupo específico?
+
+Este trabalho tem como objetivo principal preencher essa lacuna por meio de uma Revisão Sistemática da Literatura (RSL). Procura-se identificar, analisar e sintetizar os critérios, diretrizes, boas práticas e desafios relacionados ao desenvolvimento e avaliação de jogos sérios voltados para pessoas idosas, especialmente no contexto de cibersegurança. Como resultado, pretende-se consolidar um conjunto de recomendações que possa servir como um guia prático para desenvolvedores, designers e pesquisadores interessados em criar soluções de jogos mais eficazes e acessíveis para este público.
+
+A metodologia adotada seguirá um protocolo de RSL, envolvendo buscas sistemáticas em bases de dados acadêmicas relevantes (como \textit{IEEE Xplore}, \textit{ACM Digital Library}, \textit{Web of Science} e \textit{SBC Open Lib}), aplicação de critérios de inclusão e exclusão pré-definidos, e análise qualitativa dos estudos selecionados. Espera-se que a contribuição deste trabalho resida na consolidação do conhecimento existente e na oferta de um referencial prático e baseado em evidências para o avanço da área de jogos sérios para a cibersegurança e inclusão digital da população idosa.
+
+\section{Justificativa}
+%\section{Motivação}
+A vulnerabilidade crescente de pessoas idosas a ameaças cibernéticas, combinada com o potencial dos jogos sérios como ferramenta educacional engajadora, justifica a necessidade de investigar e consolidar recomendações específicas para o desenvolvimento de tais jogos. A falta de diretrizes claras dificulta a criação de soluções eficazes e acessíveis, reforçando a importância desta pesquisa para orientar futuros desenvolvimentos na área.
+
+\section{Objetivos}
+
+\subsection{Objetivo Geral}
+Realizar uma Revisão Sistemática da Literatura (RSL) para identificar e analisar os critérios, diretrizes e metodologias de levantamento de requisitos propostos no desenvolvimento de jogos sérios voltados para o público idoso, com foco em aplicações relacionadas à cibersegurança e segurança digital.
+
+\subsection{Objetivos Específicos}
+Os objetivos específicos são:
+\begin{itemize}
+    \item Apresentar o protocolo da Revisão Sistemática da Literatura (RSL) realizada, incluindo as questões de pesquisa, \textit{strings} de busca, bases de dados consultadas, e critérios de inclusão e exclusão.
+    \item Descrever o processo de seleção dos artigos relevantes.
+    \item Apresentar os resultados preliminares da RSL, com foco na identificação dos artigos selecionados que abordam recomendações para jogos sérios para idosos, destacando aqueles relacionados à cibersegurança.
+    \item Discutir a metodologia de trabalho e o cronograma previsto para as próximas fases do projeto (PGC-II e PGC-III), que incluirão a análise aprofundada dos artigos selecionados, e a consolidação dos resultados.
+\end{itemize}
+
+%sugestão
+\section{Estrutura da Monografia}
+O presente relatório está estruturado da seguinte forma: o Capítulo~\ref{cap:fundamentacao_teorica} apresenta a fundamentação teórica sobre jogos sérios, o público idoso e tecnologia, e cibersegurança. O Capítulo~\ref{cap:trabalhos_relacionados} discute trabalhos relacionados, incluindo outras revisões de literatura. O Capítulo~\ref{cap:metodologia} detalha a metodologia da RSL e o cronograma do projeto. O Capítulo~\ref{cap:resultados} apresenta os resultados preliminares da busca e seleção de artigos. Finalmente, o Capítulo~\ref{cap:conclusoes} sumariza os achados desta fase inicial e delineia os próximos passos da pesquisa.
+
+% SUGESTAO: Exemplo de estrutura da monografia:
+
+% O presente relatório está estruturado da seguinte forma: o Capítulo~\ref{cap:fundamentacao_teorica} apresenta..., o Capítulo~\ref{cap:trabalhos_relacionados}... O Capítulo~\ref{cap:metodologia} ..., o Capítulo~\ref{cap:resultados} .... Finalmente, o Capítulo~\ref{cap:conclusao} apresenta ...
+
+
+

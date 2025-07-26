@@ -1,0 +1,112 @@
+\chapter{Metodologia}
+\label{cap:metodologia}
+
+Para identificar os critérios e recomendações fundamentais para o desenvolvimento de jogos sérios sobre cibersegurança para pessoas idosas, foi adotada a metodologia de Revisão Sistemática da Literatura (RSL). Esta abordagem permite uma investigação científica rigorosa e reprodutível da literatura existente, seguindo um protocolo bem definido, conforme descrito por \cite{kitchenham2004procedures}.
+
+\section{Protocolo da RSL}\label{sec:protocolo_rsl}
+
+\subsection{Questões de Pesquisa}\label{subsec:questoes_pesquisa}
+
+As seguintes questões de pesquisa foram definidas para nortear a RSL:
+\begin{enumerate}
+    \item Quais as recomendações, requisitos, e critérios identificados no desenvolvimento de jogos para o público idoso?
+    \item Como jogos desenvolvidos tendo o público idoso como alvo são validados e testados?
+    \item Que abordagens são usadas para levantamento de requisitos nestes jogos e quais produzem melhores resultados?
+\end{enumerate}
+
+\subsection{Critérios de Inclusão e Exclusão}\label{subsec:criterios}
+
+Para garantir a relevância e qualidade dos estudos selecionados, foram estabelecidos os seguintes critérios:
+
+\textbf{Critérios de inclusão:}
+\begin{enumerate}
+    \item Apresenta recomendações específicas voltados ao público idoso em contextos de jogos ou tecnologias interativas;
+    \item Discute metodologias de levantamento de requisitos com participação do público idoso ou voltadas a suas características;
+    \item Inclui avaliação empírica ou reflexões sobre a efetividade dos critérios adotados para o público idoso;
+    \item Relaciona as recomendações e critérios com aspectos de cibersegurança ou proteção digital.
+\end{enumerate}
+
+\textbf{Critérios de exclusão:}
+\begin{enumerate}
+    \item Trabalhos que não sejam artigos de pesquisa;
+    \item Trabalhos que não estejam escritos em Língua Portuguesa ou Inglesa;
+    \item Trabalhos duplicados ou que descrevam o mesmo projeto;
+    \item Trabalhos publicados antes de 2015;
+    \item Trabalhos que mencionam o público idoso apenas de forma tangencial, sem foco na proposta de design ou avaliação de jogos para esse público;
+    \item Trabalhos que fazem uso de sensores de movimento como principal característica;
+    \item Revisões de literatura;
+    \item Trabalhos não disponíveis para acesso;
+\end{enumerate}
+
+\subsection{Bases de Dados e Estratégia de Busca}\label{subsec:bases_busca}
+
+A busca foi realizada nas seguintes bases de dados:
+\begin{itemize}
+    \item IEEE Xplore
+    \item ACM Digital Library
+    \item Web of Science
+    \item SBC OpenLib (para publicações nacionais)
+\end{itemize}
+
+As bases de dados foram escolhidas por sua ampla relevância e abrangência na área de Ciência da Computação, Engenharia e Tecnologia da Informação. A escolha dessas bases visa garantir a abrangência, diversidade e confiabilidade dos estudos coletados e são amplamente utilizadas em revisões sistemáticas e pesquisas científicas. Para cada base, foram utilizadas strings de busca adaptadas à sua sintaxe específica, mas mantendo a mesma lógica de combinação de termos relacionados a:
+
+\begin{enumerate}
+    \item Jogos: \textit{game, games, gaming, jogo, jogos}
+    \item Educacional/Sério: \textit{educational, serious, educacional, sério}
+    \item Público-alvo: \textit{elderly, old adult, old adults, senior, idoso, terceira idade}
+\end{enumerate}
+
+Estes termos foram buscados no título, abstract, e em palavras-chave nas bases que permitiam tal busca. Por exemplo, a string utilizada na IEEE Xplore foi:
+\begin{verbatim}
+("All Metadata":"gaming" OR "All Metadata":"game" OR 
+ "All Metadata":"games") AND 
+("All Metadata":"educational" OR "All Metadata":"serious") AND 
+("All Metadata":"elderly" OR "All Metadata":"old adult" OR 
+ "All Metadata":"old adults" OR "All Metadata":"senior")
+\end{verbatim}
+
+\subsection{Processo de Seleção}\label{subsec:processo_selecao}
+
+O processo de seleção dos artigos foi realizado em quatro fases:
+\begin{enumerate}
+    \item \textbf{Fase 1}: Todos os artigos retornados pela pesquisa
+    \item \textbf{Fase 2}: Remoção de artigos duplicados, escritos em outras línguas que não Inglês ou Português, ou outros tipos de trabalhos (definido pelo critério de exclusão 1)
+    \item \textbf{Fase 3}: Leitura do título e \textit{abstract} e aplicação dos critérios de inclusão e exclusão
+    \item \textbf{Fase 4}: Leitura do texto completo dos artigos, aplicação dos critérios de inclusão e exclusão (feita), e extração e análise dos dados relevantes (a ser realizada nas próximas etapas do PGC).
+\end{enumerate}
+
+Os detalhes do número de artigos encontrados e selecionados em cada fase são apresentados no Capítulo~\ref{cap:resultados}.
+
+\section{Cronograma de Trabalho}\label{sec:cronograma}
+
+O desenvolvimento deste projeto está organizado em três fases, correspondentes aos três quadrimestres do Projeto de Graduação em Computação (PGC-I, PGC-II e PGC-III), conforme detalhado na Tabela~\ref{tab:cronograma}.
+
+\begin{table}[H]
+\centering
+\caption{Cronograma do Projeto}
+\label{tab:cronograma}
+\begin{tabular}{l|p{10cm}}
+\hline
+\textbf{Fase} & \textbf{Atividades Principais} \\ \hline
+PGC-I (Fev–Abr/2025) & 
+\begin{itemize}[leftmargin=*]
+    \item Definição do tema e escopo da pesquisa
+    \item Identificação de lacunas na literatura
+    \item Execução das fases da RSL (busca, leitura e seleção dos artigos)
+    \item Elaboração do relatório preliminar
+\end{itemize} \\
+PGC-II (Jun–Ago/2025) & 
+\begin{itemize}[leftmargin=*]
+    \item Leitura completa e análise dos artigos selecionados
+    \item Extração e categorização das recomendações identificadas
+    \item Elaboração de tabela comparativa das recomendações
+    \item Elaboração do relatório intermediário
+\end{itemize} \\
+PGC-III (Set–Dez/2025) & 
+\begin{itemize}[leftmargin=*]
+    \item Consolidação dos resultados e análise
+    \item Elaboração do relatório final
+    \item Defesa do trabalho
+\end{itemize} \\ \hline
+\end{tabular}
+\end{table}
